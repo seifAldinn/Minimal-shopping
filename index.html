@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minimal Shopping - Home</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" >
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Axios -->
+    <script src="node_modules/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-3 border-bottom sticky-top">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <div class="logo-icon me-2">
+                    <img src="assests/logo.png" alt="">
+                </div>
+                <span class="fw-bold fs-4"><img src="assests/Minimal Shopping.png" alt=""></span>
+            </a>
+            <div class="ms-auto">
+                <a href="login.html" class="text-dark fs-4">
+                    <i class="bi bi-person"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-white position-relative overflow-hidden">
+        <div class="container h-100">
+            <div class="row h-100 align-items-center">
+                <div class="col-md-5 d-none d-md-block ">
+                    <img class="hero img-fluid" src= "assests/panner-photo.avif"  style="mix-blend-mode: multiply;">
+                </div>
+                <div class="col-md-7 text-center">
+                    <h1 class="display-3 fw-bold mb-4">Get 50% Off on<br>Selected categories</h1>
+                    <div class="hero-icons d-flex justify-content-center gap-4 opacity-50">
+                        <i class="bi bi-shop fs-1"></i>
+                        <i class="bi bi-cart fs-1"></i>
+                        <i class="bi bi-tag fs-1"></i>
+                        <i class="bi bi-bag fs-1"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold mb-5 fs-1">Products</h2>
+            <div id="products-row" class="row g-4">
+                <!-- Products will be loaded here dynamically -->
+            </div>
+            <div class="text-center mt-5">
+                <a href="products.html" class="btn btn-brand-outline rounded-pill px-5 py-2 fw-bold">See More</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-4 text-center text-muted border-top">
+        <div class="container">
+            <p class="mb-0">&copy; 2026 Minimal Shopping. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
